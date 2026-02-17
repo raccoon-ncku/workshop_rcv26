@@ -1,0 +1,11 @@
+services:
+  ros2-jazzy:
+    image: tiryoh/ros2-desktop-vnc:jazzy
+    ports:
+      - "6080:80"
+    environment:
+      - ROS_DOMAIN_ID=1
+    volumes:
+      - .:/home/ubuntu/workshop_ws
+    shm_size: '512mb'
+    privileged: true

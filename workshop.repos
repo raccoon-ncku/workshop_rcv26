@@ -1,0 +1,5 @@
+repositories:
+  kuka_kr300_support:
+    type: git
+    url: https://github.com/rccn-dev/kuka_kr300_support.git
+    version: jazzy
