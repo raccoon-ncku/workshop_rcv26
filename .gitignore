@@ -1,0 +1,32 @@
+# --- ROS 2 Build Artifacts ---
+build/
+install/
+log/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.tox/
+.venv/
+venv/
+ENV/
+
+# --- Git Repositories ---
+src/kuka_kr300_support/
+
+# --- VS Code ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# --- Docker ---
+.docker/
+docker-compose.override.yml
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+*.swp
