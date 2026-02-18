@@ -1,0 +1,22 @@
+{
+    "name": "ROS 2 Jazzy Workshop",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "ros2-jazzy",
+    "workspaceFolder": "/home/ubuntu/workshop_ws",
+    "remoteEnv": {
+        "DISPLAY": ":1",
+        "QT_X11_NO_MITSHM": "1",
+        "XAUTHORITY": "/home/ubuntu/.Xauthority"
+    },
+    "postCreateCommand": "bash bootstrap.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-vscode.cpptools",
+                "ms-iot.vscode-ros",
+                "redhat.vscode-yaml"
+            ]
+        }
+    }
+}
