@@ -3,3 +3,8 @@ repositories:
     type: git
     url: https://github.com/rccn-dev/kuka_kr300_support.git
     version: jazzy
+
+  rccn_robot_cell:
+    type: git
+    url: https://github.com/rccn-dev/rccn_robot_cell.git
+    version: jazzy
