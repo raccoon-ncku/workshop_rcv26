@@ -2,6 +2,7 @@
 build/
 install/
 log/
+core
 
 # --- Python ---
 __pycache__/
