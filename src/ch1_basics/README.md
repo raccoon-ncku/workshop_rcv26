@@ -4,6 +4,8 @@ From industrial controller to ROS 2. In a traditional Kuka setup, the KRC contro
 
 ## Quick Map: SmartPad → ROS 2
 
+This is a simplified analogy to help you understand the ROS 2 ecosystem. In practice, ROS 2 nodes can be more complex and interconnected than this table suggests.
+
 | Industrial concept | ROS 2 equivalent | What it means |
 | --- | --- | --- |
 | The controller | Node | Small program for one task (read camera, move robot, etc.). |
