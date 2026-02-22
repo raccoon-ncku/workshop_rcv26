@@ -8,3 +8,8 @@ repositories:
     type: git
     url: https://github.com/rccn-dev/rccn_robot_cell.git
     version: jazzy
+
+  moveit_calibration:
+    type: git
+    url: https://github.com/moveit/moveit_calibration.git
+    version: ros2
