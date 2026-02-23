@@ -2,6 +2,7 @@
 build/
 install/
 log/
+*.ikcache
 core
 
 # --- Python ---
@@ -16,6 +17,9 @@ ENV/
 
 # --- Git Repositories ---
 src/kuka_kr300_support/
+src/rccn_robot_cell/
+src/moveit_calibration/
+
 
 # --- VS Code ---
 .vscode/*
