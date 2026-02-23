@@ -20,13 +20,12 @@ class ToolAttacher(Node):
             
             # 2. Define the Tool Geometry
             tool = CollisionObject()
-            # This MUST match the last link name in your RCCN URDF (e.g., 'east_link_6')
             tool.header.frame_id = "east_tool0" 
             tool.id = "fabrication_extruder"
             
             shape = SolidPrimitive()
-            shape.type = SolidPrimitive.CYLINDER
-            shape.dimensions = [0.3, 0.05] # 30cm long, 5cm diameter
+            shape.type = SolidPrimitive.BOX
+            shape.dimensions = [0.3, 1.5, 0.05] # 30cm long, 5cm wide, 5cm tall
             
             pose = Pose()
             pose.position.z = 0.15 # Offset so it protrudes from the flange

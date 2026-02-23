@@ -24,11 +24,10 @@ To move, every link in the chain must be present.
 
 ## Hands-On: Move Your First Joint
 
-1) **Build the package**
+1) **Launch the robot (gui mode)**
 
 ```bash
-colcon build --packages-select ch1_basics --symlink-install
-source install/setup.bash
+ros2 launch ch1_basics ch1_exercise.launch.py mode:=gui
 ```
 
 2) **Launch the robot (manual mode)**

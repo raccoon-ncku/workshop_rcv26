@@ -27,7 +27,7 @@ In robotic fabrication (e.g., 3D printing or timber milling), we don't care abou
 This starts the "Brain" and the 3D Interface. Note that we are using the `rccn_kuka_robot_cell` configuration.
 
 ```bash
-ros2 launch rccn_kuka_robot_cell robot_moveit.launch.py
+ros2 launch rccn_kuka_robot_cell_moveit_config demo.launch.py
 ```
 
 ### Step 2: Publish the Workshop Obstacle
@@ -43,7 +43,7 @@ ros2 run ch2_moveit obstacle_publisher
 Now, tell the robot it is holding a 30cm extruder. This ensures the robot knows its "Hand" is now longer.
 
 ```bash
-ros2 run ch2_moveit tool_attacher
+ros2 run ch2_moveit tool_publisher
 ```
 
 ## 4. What to Expect (The Results)
