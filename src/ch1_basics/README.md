@@ -27,13 +27,13 @@ To move, every link in the chain must be present.
 1) **Launch the robot (gui mode)**
 
 ```bash
-ros2 launch ch1_basics ch1_exercise.launch.py mode:=gui
+ros2 launch rccn_kuka_robot_cell robot.launch.py mode:=gui
 ```
 
 2) **Launch the robot (manual mode)**
 
 ```bash
-ros2 launch ch1_basics ch1_exercise.launch.py mode:=manual
+ros2 launch rccn_kuka_robot_cell robot.launch.py mode:=manual
 ```
 
 The robot may look white/broken in RViz while it waits for your data.
@@ -51,12 +51,3 @@ This initializes joints to zero and moves A1 and A3 with a sine wave.
 - Flickering robot: another publisher is active (e.g., GUI sliders). Close all terminals and relaunch with `mode:=manual`.
 - `Command not found`: forgot to `source install/setup.bash` in the terminal you are using.
 - Robot in pieces: joint names in your script must match the URDF prefix (for example `east_joint_a1`).
-
-## Command Cheat Sheet
-
-| Action | Command |
-| --- | --- |
-| Build | `colcon build --packages-select ch1_basics --symlink-install` |
-| Source | `source install/setup.bash` |
-| Launch | `ros2 launch ch1_basics ch1_exercise.launch.py mode:=manual` |
-| Run node | `ros2 run ch1_basics subset_mover` |
