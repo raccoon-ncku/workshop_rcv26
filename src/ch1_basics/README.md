@@ -67,6 +67,11 @@ Once finished, press `Ctrl+C` to stop the launch.
 ```bash
 ros2 launch ch1_basics robot.launch.py mode:=manual
 ```
+in the other terminal, run:
+
+```bash
+ros2 run rqt_tf_tree rqt_tf_tree
+```
 
 The robot may look white/broken in RViz while it waits for your data.
 
@@ -80,8 +85,16 @@ ros2 run ch1_basics subset_mover
 
 This initializes joints to zero and moves A1 and A3 with a sine wave.
 
-## Troubleshooting
+## Topic Introspection
+To see the data flowing through the system, you can use ROS 2 command-line tools:
+- List all topics: `ros2 topic list`
+- Echo a topic to see its messages: `ros2 topic echo /joint_states --once`
+- check info about a topic: `ros2 topic info /joint_states`
+- check hz: `ros2 topic hz /joint_states`
+- check bandwidth: `ros2 topic bw /joint_states`
 
+## Troubleshooting
+- `ros2` command not found or `No module named 'rccn_kuka_robot_cell'`: run `bash ./bootstrap.sh` to build the workspace and source the setup file.
 - Flickering robot: another publisher is active (e.g., GUI sliders). Close all terminals and relaunch with `mode:=manual`.
 - `Command not found`: forgot to `source install/setup.bash` in the terminal you are using.
 - Robot in pieces: joint names in your script must match the URDF prefix (for example `east_joint_a1`).
