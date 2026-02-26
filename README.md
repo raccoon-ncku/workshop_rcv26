@@ -31,3 +31,20 @@ This repository contains the materials for the Robotic Computer Vision Workshop 
 3. click the `><` button in the bottom left corner and select "Reopen in Container"
 4. wait for the container to build and open a new terminal inside the container
 5. open browser and go to `http://localhost:6080/` to access the VNC desktop environment
+
+## Turtle bot
+
+```bash
+ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py slam:=true nav2:=true rviz:=true
+```
+
+## Modern Robotics
+Recent devvelopments focus on GPU-accelerated algorithms for real-time performance, leveraging deep learning for perception and control, and integrating ROS 2 with cloud services for enhanced capabilities. The use of simulation environments like Gazebo and Unity has also become more prevalent for testing and training robotic systems.
+
+Amoing the most popular libraries and frameworks are:
+- **[Issac ROS](https://developer.nvidia.com/isaac/ros):** NVIDIA's platform for developing and deploying AI-powered robots, offering tools for simulation, perception, and control.
+
+- **[NVblox](https://github.com/nvidia-isaac/nvblox)**: A GPU-accelerated library for real-time 3D mapping and localization, designed for use in robotic applications.
+
+- **[Omniverse](https://developer.nvidia.com/omniverse):** NVIDIA's platform for real-time 3D simulation and collaboration, enabling developers to create and test robotic systems in a virtual environment.
+

@@ -19,7 +19,7 @@ echo "--- Installing System Dependencies ---"
 sudo sh -c 'echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 sudo apt-get update
-sudo apt install -y ros-jazzy-moveit-ros-perception ros-jazzy-ros-gz ros-jazzy-gz-ros2-control ros-jazzy-rqt*
+sudo apt install -y ros-jazzy-moveit-ros-perception ros-jazzy-ros-gz ros-jazzy-gz-ros2-control ros-jazzy-rqt* ros-jazzy-turtlebot4*
 rosdep update
 rosdep install --from-paths src --ignore-src -y --rosdistro jazzy
 
